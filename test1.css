@@ -1,0 +1,116 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav1 {
+    border: 2px solid red;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.nav1 ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav1 a {
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav1 a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav1 a:hover {
+    color: blue;
+}
+
+.nav1 a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav1 .login-btn {
+    background-color: rgb(1, 158, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav1 .login-btn:hover {
+    background-color: rgb(39, 84, 231);
+}
+
+.nav2 {
+    background-color: blanchedalmond;
+    border: 2px solid red;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.nav2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav2 li {
+    margin-bottom: 20px;
+}
+
+.nav2 a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav2 a:hover {
+    background-color: rgb(0, 132, 255);
+    color: white;
+}
+
+.nav2 .login-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: green;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav2 .login-btn:hover {
+    background-color: blue;
+}

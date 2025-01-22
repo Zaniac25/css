@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            background-color: #4b4a4a;
+            border-radius: 8px;
+            width: 300px;
+            padding: 30px;
+            margin-bottom: 30px;
+            
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+          
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            /* gap: 20px; */
+        }
+
+        input{
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(240, 255, 255, 0.808);
+            border: 0;
+            
+        }
+
+        button{
+            background-color: green;
+            color: aliceblue;
+            width: 80px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 0;
+            
+        }
+
+        button:hover{
+            background-color: rgba(0, 128, 0, 0.479);
+        }
+
+        input:hover{
+            background-color:rgba(245, 245, 220, 0.527);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Login</h1>
+        <form>
+            <input type="email" name="email" id="" placeholder="Email">
+            <input type="password" name="Password" id="" placeholder="Password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
